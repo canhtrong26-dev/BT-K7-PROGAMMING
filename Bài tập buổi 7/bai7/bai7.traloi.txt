@@ -1,0 +1,22 @@
+1. Máy có internet không?
+có vì ping google nhận được phản hồi 
+64 bytes from nchkga-aj-in-f14.1e100.net (142.250.197.142): icmp_seq=1 ttl=128 time=23.2 ms
+này liên tục không mất 1 dòng nào hết
+
+2. Lệnh curl trả về gì?
+trả về nội dung html của trang web tức là máy vẫn kết nối được internet và tải được trang web vèe
+
+3. Có những port nào đang lắng nghe?
+
+có những cổng 5353 , 323, 53 là udp (đường truyền nhanh nhưng không đáng tin cậy ví dụ như cmt trong live tream, chat game nó sẽ được truyền đi nhanh và khôn được lưu trữ)
+
+631, 3306 , 53,3306 là cổng về tcp cổng đường truyền đáng tin cậy ví dụ như mess, zalo, sms,...
+
+
+631 — CUPS (dịch vụ máy in)
+33060 — MySQL X Protocol (port phụ)
+53 — DNS
+3306 — MySQL 
+5353 — mDNS (tìm thiết bị trong mạng nội bộ)
+323 — chrony (đồng bộ thời gian)
+53 — DNS

@@ -1,0 +1,9 @@
+khối ngoài cùng là khối browser (trình duyệt e thấy), nó nó nằm ngoài vì người dùng đứng ngoài hệ thống
+
+khối 2 là ubuntu VMware của e, mọi thứ còn lại nằm ở trong nó
+
+khối 3 là phần docker engine là phần mềm docker nó nằm trong ubuntu và chứa các container 
+
+khối 4 container web-bai1: container trong sơ đồ đang chạy images là nginx
+
+khối 5 nói file index.html nằm , nó ở trong ubuntu nhưng ngoài docker, phần nét đứt giữa /home/canh/web-bai1 ---  /usr/share/nginx/html , 2 thư mục này thực chất đều là 1 , nginx mở thư mục bên phải những đọc được file của em ở bên trái

@@ -1,0 +1,17 @@
+khối 1: người dùng gõ link localhost : nằm ngoài cùng
+
+khối 2: máy ubuntu của e chứa 2 ô cổng xanh lá và toàn bộ docker 
+
+khối 3: docker engine chứa network và volume
+
+khối 4: network: web-bai7 khung hồng khung này bao quanh 2 container . đây là hành lang đường kết nối bằng docker network create web-bai7 container nằm trong khung này thì được gọi nhau bằng tên
+
+khối 5 web7(xanh dương trái)
+container nginx,cổng 80
+
+khối 6: db-bai7 (xanh dương phải)
+Container MySQL, cổng 3306, dữ liệu ở /var/lib/mysql
+
+khối 7: vol-bai7(vàng, dưới cùng)
+volume nằm trong docker nhưng ngoài network vì volume là chuyện lưu trử không phải là chuyện mạng
+

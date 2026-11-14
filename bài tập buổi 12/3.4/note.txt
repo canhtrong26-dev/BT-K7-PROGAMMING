@@ -1,0 +1,30 @@
+4.4. Yeu cau 3.4 - Kiem tra DNS
+
+Muc tieu: xac dinh DNS server, kiem tra phan giai ten mien,
+phan biet loi DNS voi loi mat ket noi mang.
+
+Lenh da dung:
+  resolvectl status
+    -> xac dinh DNS server dang su dung
+  dig google.com +short
+    -> kiem tra phan giai ten mien
+  ping -c 2 8.8.8.8
+    -> kiem tra ket noi mang (khong qua DNS)
+  ping -c 2 google.com
+    -> kiem tra ket noi mang + DNS
+  dig @192.0.2.1 google.com +short +time=2 +tries=1
+    -> gia lap loi DNS (IP 192.0.2.1 thuoc dai thu nghiem,
+       khong co DNS server that) - khong sua cau hinh he thong
+
+Ket qua:
+  - DNS server: [dien gia tri tu resolvectl]
+  - Phan giai google.com -> 142.250.197.46 (thanh cong)
+  - ping 8.8.8.8: 0% packet loss
+  - ping google.com: 0% packet loss
+  - dig toi DNS gia: timed out, no servers could be reached
+
+Ket luan:
+  Khi ping IP thanh cong nhung phan giai ten mien that bai
+  -> loi nam o DNS, khong phai mat ket noi mang.
+
+Minh chung: 05_Minh_chung/yc34_dns.png

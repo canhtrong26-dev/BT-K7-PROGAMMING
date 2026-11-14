@@ -1,0 +1,5 @@
+Ket luan 3.6:
+- Giu: 3 cong (22, 80, 443)
+- De xuat dong: 5 cong database/quan tri - KHONG tu dong
+  vi server dung chung nhieu nguoi
+- Chua ro: 9 cong cua container khac - can giang vien xac nhan

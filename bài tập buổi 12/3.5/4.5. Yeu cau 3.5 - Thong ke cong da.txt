@@ -1,0 +1,25 @@
+4.5. Yeu cau 3.5 - Thong ke cong dang lang nghe
+
+Lenh da dung:
+  ss -tulnp
+    -> liet ke cong TCP/UDP dang lang nghe + tien trinh + PID
+  ps -o user= -p <PID>
+    -> xac dinh user chay tien trinh
+
+Ket qua (cong mo ra Internet):
+  22    sshd          root   SSH
+  80    nginx         root   Web HTTP
+  443   nginx         root   Web HTTPS
+  1434  docker-proxy  root   SQL Server (container)
+  3301  docker-proxy  root   MySQL (container)
+  5050  docker-proxy  root   pgAdmin (container)
+  5432  docker-proxy  root   PostgreSQL (container)
+  6379  docker-proxy  root   Redis (container)
+  8017, 8057, 8082, 8085, 8091, 8099, 18096, 1510, 3005
+        docker-proxy  root   cac web app container
+
+Ngoai ra ~30 cong bind 127.0.0.1 (chi localhost truy cap duoc).
+
+Nhan xet:
+  - Cac cong database (5432, 6379, 3301, 1434) dang mo ra Internet
+  - Toan bo tien trinh chay bang user root
